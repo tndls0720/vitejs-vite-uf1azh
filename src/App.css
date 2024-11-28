@@ -1,0 +1,65 @@
+/* 전체 컨테이너 스타일 */
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* 검색 입력 필드 스타일 */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 리스트 스타일 */
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list li {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.item-list li:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.item-list li:active {
+  background-color: #e0e0e0;
+}
+
+/* 선택된 항목 스타일 */
+.selected-item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
